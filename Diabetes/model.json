@@ -1,0 +1,307 @@
+{
+  "root": {
+    "attribute": "Polydipsia",
+    "predicateName": ">=",
+    "pivot": 1,
+    "match": {
+      "attribute": "Gender",
+      "predicateName": ">=",
+      "pivot": 1,
+      "match": {
+        "attribute": "Itching",
+        "predicateName": ">=",
+        "pivot": 1,
+        "match": {
+          "attribute": "Genitalthrush",
+          "predicateName": ">=",
+          "pivot": 1,
+          "match": { "category": "1" },
+          "notMatch": {
+            "attribute": "Irritability",
+            "predicateName": ">=",
+            "pivot": 1,
+            "match": { "category": "1" },
+            "notMatch": {
+              "attribute": "musclestiffness",
+              "predicateName": ">=",
+              "pivot": 1,
+              "match": {
+                "attribute": "delayedhealing",
+                "predicateName": ">=",
+                "pivot": 1,
+                "match": {
+                  "attribute": "Age",
+                  "predicateName": ">=",
+                  "pivot": 56,
+                  "match": { "category": "0" },
+                  "notMatch": { "category": "1" },
+                  "matchedCount": 1,
+                  "notMatchedCount": 3
+                },
+                "notMatch": { "category": "0" },
+                "matchedCount": 4,
+                "notMatchedCount": 6
+              },
+              "notMatch": {
+                "attribute": "partialparesis",
+                "predicateName": ">=",
+                "pivot": 1,
+                "match": {
+                  "attribute": "Age",
+                  "predicateName": ">=",
+                  "pivot": 58,
+                  "match": { "category": "1" },
+                  "notMatch": {
+                    "attribute": "Alopecia",
+                    "predicateName": ">=",
+                    "pivot": 1,
+                    "match": { "category": "1" },
+                    "notMatch": { "category": "0" },
+                    "matchedCount": 1,
+                    "notMatchedCount": 1
+                  },
+                  "matchedCount": 2,
+                  "notMatchedCount": 2
+                },
+                "notMatch": { "category": "1" },
+                "matchedCount": 4,
+                "notMatchedCount": 5
+              },
+              "matchedCount": 10,
+              "notMatchedCount": 9
+            },
+            "matchedCount": 11,
+            "notMatchedCount": 19
+          },
+          "matchedCount": 21,
+          "notMatchedCount": 30
+        },
+        "notMatch": { "category": "1" },
+        "matchedCount": 51,
+        "notMatchedCount": 44
+      },
+      "notMatch": { "category": "1" },
+      "matchedCount": 95,
+      "notMatchedCount": 95
+    },
+    "notMatch": {
+      "attribute": "Gender",
+      "predicateName": ">=",
+      "pivot": 1,
+      "match": {
+        "attribute": "Irritability",
+        "predicateName": ">=",
+        "pivot": 1,
+        "match": {
+          "attribute": "Genitalthrush",
+          "predicateName": ">=",
+          "pivot": 1,
+          "match": { "category": "1" },
+          "notMatch": {
+            "attribute": "musclestiffness",
+            "predicateName": ">=",
+            "pivot": 1,
+            "match": {
+              "attribute": "Itching",
+              "predicateName": ">=",
+              "pivot": 1,
+              "match": {
+                "attribute": "Age",
+                "predicateName": ">=",
+                "pivot": 64,
+                "match": { "category": "0" },
+                "notMatch": { "category": "1" },
+                "matchedCount": 7,
+                "notMatchedCount": 1
+              },
+              "notMatch": { "category": "1" },
+              "matchedCount": 8,
+              "notMatchedCount": 3
+            },
+            "notMatch": { "category": "0" },
+            "matchedCount": 11,
+            "notMatchedCount": 6
+          },
+          "matchedCount": 14,
+          "notMatchedCount": 17
+        },
+        "notMatch": {
+          "attribute": "partialparesis",
+          "predicateName": ">=",
+          "pivot": 1,
+          "match": {
+            "attribute": "Itching",
+            "predicateName": ">=",
+            "pivot": 1,
+            "match": { "category": "0" },
+            "notMatch": {
+              "attribute": "musclestiffness",
+              "predicateName": ">=",
+              "pivot": 1,
+              "match": {
+                "attribute": "Age",
+                "predicateName": ">=",
+                "pivot": 60,
+                "match": { "category": "0" },
+                "notMatch": { "category": "1" },
+                "matchedCount": 3,
+                "notMatchedCount": 1
+              },
+              "notMatch": { "category": "1" },
+              "matchedCount": 4,
+              "notMatchedCount": 8
+            },
+            "matchedCount": 15,
+            "notMatchedCount": 12
+          },
+          "notMatch": {
+            "attribute": "Age",
+            "predicateName": ">=",
+            "pivot": 42,
+            "match": {
+              "attribute": "Alopecia",
+              "predicateName": ">=",
+              "pivot": 1,
+              "match": { "category": "0" },
+              "notMatch": {
+                "attribute": "Itching",
+                "predicateName": ">=",
+                "pivot": 1,
+                "match": {
+                  "attribute": "Genitalthrush",
+                  "predicateName": ">=",
+                  "pivot": 1,
+                  "match": { "category": "1" },
+                  "notMatch": { "category": "0" },
+                  "matchedCount": 1,
+                  "notMatchedCount": 1
+                },
+                "notMatch": { "category": "0" },
+                "matchedCount": 2,
+                "notMatchedCount": 13
+              },
+              "matchedCount": 48,
+              "notMatchedCount": 15
+            },
+            "notMatch": {
+              "attribute": "delayedhealing",
+              "predicateName": ">=",
+              "pivot": 1,
+              "match": { "category": "1" },
+              "notMatch": {
+                "attribute": "musclestiffness",
+                "predicateName": ">=",
+                "pivot": 1,
+                "match": { "category": "1" },
+                "notMatch": {
+                  "attribute": "Age",
+                  "predicateName": ">=",
+                  "pivot": 26,
+                  "match": {
+                    "attribute": "Age",
+                    "predicateName": ">=",
+                    "pivot": 38,
+                    "match": {
+                      "attribute": "Age",
+                      "predicateName": ">=",
+                      "pivot": 39,
+                      "match": { "category": "0" },
+                      "notMatch": { "category": "0" },
+                      "matchedCount": 5,
+                      "notMatchedCount": 5
+                    },
+                    "notMatch": { "category": "0" },
+                    "matchedCount": 10,
+                    "notMatchedCount": 34
+                  },
+                  "notMatch": { "category": "1" },
+                  "matchedCount": 44,
+                  "notMatchedCount": 1
+                },
+                "matchedCount": 2,
+                "notMatchedCount": 45
+              },
+              "matchedCount": 4,
+              "notMatchedCount": 47
+            },
+            "matchedCount": 63,
+            "notMatchedCount": 51
+          },
+          "matchedCount": 27,
+          "notMatchedCount": 114
+        },
+        "matchedCount": 31,
+        "notMatchedCount": 141
+      },
+      "notMatch": {
+        "attribute": "delayedhealing",
+        "predicateName": ">=",
+        "pivot": 1,
+        "match": {
+          "attribute": "Alopecia",
+          "predicateName": ">=",
+          "pivot": 1,
+          "match": {
+            "attribute": "Age",
+            "predicateName": ">=",
+            "pivot": 69,
+            "match": { "category": "1" },
+            "notMatch": { "category": "0" },
+            "matchedCount": 2,
+            "notMatchedCount": 12
+          },
+          "notMatch": { "category": "1" },
+          "matchedCount": 14,
+          "notMatchedCount": 3
+        },
+        "notMatch": {
+          "attribute": "Age",
+          "predicateName": ">=",
+          "pivot": 38,
+          "match": { "category": "1" },
+          "notMatch": {
+            "attribute": "Age",
+            "predicateName": ">=",
+            "pivot": 33,
+            "match": {
+              "attribute": "Age",
+              "predicateName": ">=",
+              "pivot": 35,
+              "match": {
+                "attribute": "Age",
+                "predicateName": ">=",
+                "pivot": 36,
+                "match": { "category": "0" },
+                "notMatch": { "category": "1" },
+                "matchedCount": 1,
+                "notMatchedCount": 3
+              },
+              "notMatch": { "category": "0" },
+              "matchedCount": 4,
+              "notMatchedCount": 4
+            },
+            "notMatch": {
+              "attribute": "Gender",
+              "predicateName": ">=",
+              "pivot": 0,
+              "match": { "category": "1" },
+              "notMatch": { "category": "undefined" },
+              "matchedCount": 6,
+              "notMatchedCount": 1
+            },
+            "matchedCount": 8,
+            "notMatchedCount": 7
+          },
+          "matchedCount": 22,
+          "notMatchedCount": 15
+        },
+        "matchedCount": 17,
+        "notMatchedCount": 37
+      },
+      "matchedCount": 172,
+      "notMatchedCount": 54
+    },
+    "matchedCount": 190,
+    "notMatchedCount": 226
+  }
+}

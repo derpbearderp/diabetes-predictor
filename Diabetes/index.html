@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="new.js" type="module"></script>
+    <title>Decision Tree Inleveropdracht</title>
+    <header>Early stage diabetes predictor</header>
+</head>
+
+<body>
+    <h1>
+      Welcome to the early stage diabetes predictor.<br>
+      This application is intended to help sick people with an unknown illness determine if they might be suffering from diabetes or not.<br>
+      By filling out the fields on this website our team can predict whether you might be showing early signs of diabetes. Keep in mind that if you are healthy the results won't be completely accurate<br>
+      To use this application all you need to do is fill out all fields.<br>
+      Read the instructions in the information bubbles to know what to input in each field. Make sure to input the right data as it will influence the results<br>
+      Our predictions are made based on the data from <a href="https://www.kaggle.com/datasets/sujan97/early-stage-diabetes-2020">this dataset</a>
+    </h1>
+   <div>
+    <label for="Age">Age:</label>
+    <input type="number" id="Age" name="Age" min="20" max="65" required >
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Please fill in your age.</span>
+      </div2><br> 
+    <label for="Gender">Gender:</label>
+    <input type="number" id="Gender" name="Gender" min="0" max="1" required>
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">If you are a man at birth fill in: 1<br> If you are a woman at birth fill in: 0</span>
+      </div2><br>
+    <label for="Polydipsia">Polydipsia:</label>
+    <input type="number" id="Polydipsia" name="Polydipsia" min="0" max="1" required>
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Do you have polydipsia? Fill in 1 if you do, fill in 0 if you don't.<br>Polydipsia is the medical term for excessive thirst, the need to always drink fluids.</span>
+      </div2><br>
+    <label for="Genitalthrush">Genital thrush:</label>
+    <input type="number" id="Genitalthrush" name="Genitalthrush" min="0" max="1" required>
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Do you have a genital thrush? Fill in 1 if you do, fill in 0 if you don't.<br>A genital thrush is a yeast infection near the genital area, it's symptoms often include irritation, itchiness of the genital area and extra discharge.</span>
+      </div2><br>
+    <label for="Itching">Itching</label>
+    <input type="number" id="Itching" name="Itching" min="0" max="1" required>
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Do you have an excessive Itch? Fill in 1 if you do, fill in 0 if you don't.</span>
+      </div2><br>
+    <label for="Irritability">Irritability</label>
+    <input type="number" id="Irritability" name="Irritability" min="0" max="1" required>
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Are you quickly irritated? Fill in 1 if you are, fill in 0 if you aren't.</span>
+      </div2><br>
+    <label for="delayedhealing">delayed healing</label>
+    <input type="number" id="delayedhealing" name="delayedhealing" min="0" max="1" required>
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Do your wounds heal slowly or not at all? Fill in 1 if they don't, fill in 0 if they do.</span>
+      </div2><br>
+    <label for="partialparesis">partial paresis</label>
+    <input type="number" id="partialparesis" name="partialparesis" min="0" max="1" required>
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Do you often have partial paresis? Fill in 1 if you do, fill in 0 if you don't. <br>Partial paresis is a condition in which muscle movement is weakened, Unlike paralysis there is still some control.</span>
+      </div2><br>
+    <label for="musclestiffness">muscle stiffness</label>
+    <input type="number" id="musclestiffness" name="musclestiffness" min="0" max="1" required>
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Do you often have muscle stiffness? Fill in 1 if you do, fill in 0 if you don't. <br>Muscle stiffness refers to a tight feeling in the muscles, which can mean pain and or difficulty moving.</span>
+      </div2><br>
+    <label for="Alopecia">Alopecia</label>
+    <input type="number" id="Alopecia" name="Alopecia" min="0" max="1">
+    <div2 class="tooltip">&#x1F6C8;
+        <span class="tooltiptext">Do you have Alopecia? Fill in 1 if you do, fill in 0 if you don't.<br>Alopecia is the medical term for hair loss</span>
+      </div2><br>
+    <button id="prediction">predict</button>
+   </div>
+   <div id="predic"></div> 
+</body>
+</html>
